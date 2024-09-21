@@ -1,2 +1,7 @@
-const box = document.querySelector('.box')
-const box2 = document.querySelector('.box2')
+const button = document.querySelector('.hamburger')
+const navigation = document.querySelector('.header__navigation')
+
+button.addEventListener('click', ()=> {
+    button.classList.toggle("is-active");
+    navigation.classList.toggle("header__navigation--active");
+})
