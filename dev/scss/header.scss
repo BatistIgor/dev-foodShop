@@ -1,2 +1,202 @@
 .header {
+    padding-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: 1440px 800px;
+    background-color: black;
+    position: relative;
+
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 168px;
+    }
+
+    &__logo-img {
+        max-width: 100px;
+        max-height: 68px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 23px;
+        margin-right: 36px;
+    }
+
+    &__link {
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    &__basket {
+        margin-right: 55px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -14px;
+            right: -21px;
+            width: 1px;
+            height: 51px;
+            background-color: #fff;
+        }
+    }
+
+    &__basket-img {
+        max-width: 13px;
+        max-height: 13px;
+    }
+
+    &__info {
+        color: #fff;
+        margin-right: 45px;
+
+        &-phone {
+            font-family: 'OpenSans';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            padding-left: 28px;
+            position: relative;
+
+            &::after {
+                content: "";
+                background-image: url(../img/phone.svg);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 23px;
+                height: 23px;
+            }
+        }
+
+        &-text {
+            margin: 0;
+            max-width: 154px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    &__bottom {
+        max-width: 556px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 92px;
+        color: $color-orange-titles;
+        text-align: center;
+        margin-bottom: 13px;
+
+        &>span {
+            font-size: 50px;
+            line-height: 57px;
+        }
+
+
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-white;
+        margin: 0;
+        position: relative;
+        margin-bottom: 21px;
+
+        &::after {
+            content: "";
+            width: 61px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 11px;
+            left: -65px;
+        }
+
+        
+        &::before {
+            content: "";
+            width: 61px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 11px;
+            right: -65px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        gap: 31px;
+        position: absolute;
+        bottom: -231px;
+        left: 0;
+        width: 100%;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 349px;
+            background-color: #fff;
+            padding: 40px 35px 18px;
+            box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.10);
+        }
+
+        &-img {
+            max-width: 87px;
+            max-height: 87px;
+        }
+
+        &-title {
+            color: $color-black;
+            font-family: 'Tinos';
+            font-size: 26px;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+
+            &>span {
+                color: #BC9060;
+            }
+        }
+
+        &-text {
+            color: #656363;
+            text-align: center;
+            font-family: 'Tinos';
+            font-size: 26px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+
+    }
+
 }
+
+
+
