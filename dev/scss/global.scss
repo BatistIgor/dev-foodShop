@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+h2 {
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+}
+
 a { 
     text-decoration: none;
     color: inherit;
@@ -49,5 +57,14 @@ button {
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
 
 
