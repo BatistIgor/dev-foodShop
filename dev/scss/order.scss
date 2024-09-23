@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: 0; /* Теперь это основной слой */
+    margin-bottom: 132px;
 
     &::before {
         content: '';
@@ -53,6 +54,14 @@
         z-index: 3; 
         position: relative; 
         max-height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .order {
+        margin-bottom: 63px;
     }
 
 }
