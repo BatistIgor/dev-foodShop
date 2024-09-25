@@ -1,0 +1,188 @@
+.menu {
+
+    &__background {
+        background-image: url(../img/bgMenu.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 226px;
+    }
+
+    &__inner {
+        padding-top: 98px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: #FFF;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+        font-family: Tinos;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 138px;
+    }
+
+    .button-box {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    &__button-prev {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        left: -5%;
+        width: 40px;
+        height: 40px;
+        background-color: $color-orange-titles;
+        border-radius: 50%;
+        z-index: 100;
+    }
+
+    &__button-next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        right: -5%;
+        width: 40px;
+        height: 40px;
+        background-color: $color-orange-titles;
+        border-radius: 50%;
+        z-index: 100;
+    }
+
+    &__boxs {
+        max-width: 1110px;
+    }
+
+    &__box {
+        padding-bottom: 29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+
+        &--recomend {
+            position: relative;
+            
+            &::after {
+                content: "RECOMMENDED";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $color-orange-titles;
+                padding: 7px 11px 11px;
+                font-family: "OpenSans";
+                font-size: 13px;
+            }
+        }
+
+        &-img {
+            max-width: 300px;
+            max-height: 273px;
+            padding: 80px 60px 17px;
+        }
+
+        &-title {
+            text-align: center;
+            font-family: Tinos;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 17px;
+        }
+
+        &-description {
+            text-align: center;
+            font-family: "OpenSans";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+            max-width: 226px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu {
+
+        &__boxs {
+            max-width: 731px;
+        }
+
+        &__box {
+            max-width: 350px;
+        }
+
+        &__button-prev {
+            left: -6%;
+        }
+    
+        &__button-next {
+            right: -6%;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .menu {
+
+        &__boxs {
+            width: 350px;
+        }
+
+        &__button-prev {
+            left: -15%;
+        }
+    
+        &__button-next {
+            right: -15%;
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .menu {
+
+        &__background {
+            padding-bottom: 106px;
+        }
+
+        &__box-img {
+            max-width: 223px;
+            max-height: 223px;
+            padding: 80px 23px 12px;
+        }
+
+        &__inner {
+            padding-top: 62px;
+        }
+
+        &__title {
+            margin-bottom: 98px;
+        }
+
+        &__boxs {
+            max-width: 290px;
+        }
+
+        &__button-prev {
+            display: none;
+        }
+    
+        &__button-next {
+            display: none;
+        }
+
+        &__box {
+            max-width: 290px;
+        }
+    }
+}

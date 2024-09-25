@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+h2>span {
+    color: $color-orange-titles;
+}
+
 h2 {
     font-family: 'Tinos';
     font-weight: 400;
@@ -55,6 +59,11 @@ button {
     font-size: 14px;
     line-height: 19px;
     cursor: pointer;
+    transition: 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 @media screen and (max-width: 600px) {

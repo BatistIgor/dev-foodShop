@@ -1,6 +1,7 @@
 
 @import 'assets/css/normalize';
-
+@import 'assets/css/swiper-bundle';
+@import 'assets/css/animate';
 
 //директория scss/
 @import 'scss/variables';
@@ -12,4 +13,7 @@
 @import 'scss/order';
 @import 'scss/catalog';
 @import 'scss/history';
+@import 'scss/menu';
+@import 'scss/coments';
+@import 'scss/gallery';
 @import 'scss/footer';
